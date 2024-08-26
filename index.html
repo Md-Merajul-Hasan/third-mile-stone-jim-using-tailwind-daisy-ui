@@ -2,44 +2,74 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="shortcut icon" type="x-icon" href="./assets/builder (1).png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assignment 3 Merajul Hasan Jim</title>
-    <!-- linked google font manrope -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
-      rel="stylesheet"
-    />
-    <!-- linked daisyUI CDN -->
+    <title>Test</title>
+    <!-- google font manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- daisy UI and Tailwind CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
       rel="stylesheet"
       type="text/css"
     />
-    <!-- linked tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- linked font awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/259cd0cdc4.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- class of font manrope -->
-     <style>
-        .font-manrope{
-            font-family: "Manrope", "sans-serif";
-        }
-     </style>
+    <style>
+      .font-manrope {
+        font-family: "Manrope", "sans-serif";
+      }
+    </style>
     <!-- linked customization object of tailwind CDN -->
     <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: "#da373d",
-            },
-          },
-        },
-      };
-    </script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                primary: '#ABEF5F',
+                black1: '#494949',
+                black2: '#737373',
+                secondary: 'rgba(171, 239, 95, 0.5)',
+              }
+            }
+          }
+        }
+      </script>
   </head>
   <body class="font-manrope">
-    
+    <header>
+      <nav>
+        <div class="flex justify-between py-4 px-8 relative">
+          <div>
+            <p class="text-3xl font-extrabold"><i class="fa-solid fa-arrow-right -rotate-45 bg-primary mx-1
+              p-1 rounded-full"></i>Rinterio</p>
+          </div>
+          <div class="invisible absolute lg:relative lg:visible">
+            <ul class="px-1 flex gap-5">
+              <li><a class="text-black1">Home</a></li>
+              <li><a class="text-black2">Services</a></li>
+              <li><a class="text-black2">Portfolio</a></li>
+              <li><a class="text-black2">Blogs</a></li>
+              <li><a class="text-black2">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="invisible absolute lg:relative lg:visible flex gap-5">
+            <button class="p-4 rounded-full" style="background-image: url(./assets/bg.jpg);"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="px-4 rounded-full" style="background-image: url(./assets/bg.jpg)"><i class="fa-solid fa-cart-shopping"></i></button>
+            <button class="bg-primary p-2 px-4 rounded-3xl text-2xl font-extrabold">Book Consult<i class="fa-solid fa-arrow-right  text-white -rotate-45 ml-3 bg-black rounded-full p-2"></i></button>
+          </div>
+          <div class="visible lg:invisible absolute right-28">
+            <button class="px-3" style="background-image: url(./assets/bg.jpg);"><i class="fa-solid fa-bars"></i></button>
+          </div>
+        </div>
+      </nav>
+    </header>
   </body>
 </html>
