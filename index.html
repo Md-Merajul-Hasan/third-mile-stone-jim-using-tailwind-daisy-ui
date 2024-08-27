@@ -36,6 +36,7 @@
                 primary: '#ABEF5F',
                 black1: '#494949',
                 black2: '#737373',
+                black3: '#212121',
                 secondary: 'rgba(171, 239, 95, 0.5)',
               }
             }
@@ -48,7 +49,7 @@
       <nav>
         <div class="flex justify-between py-4 px-8 relative">
           <div>
-            <p class="text-3xl font-extrabold"><i class="fa-solid fa-arrow-right -rotate-45 bg-primary mx-1
+            <p class="text-3xl font-extrabold text-black3"><i class="fa-solid fa-arrow-right -rotate-45 bg-primary mx-1
               p-1 rounded-full"></i>Rinterio</p>
           </div>
           <div class="invisible absolute lg:relative lg:visible">
@@ -63,13 +64,20 @@
           <div class="invisible absolute lg:relative lg:visible flex gap-5">
             <button class="p-4 rounded-full" style="background-image: url(./assets/bg.jpg);"><i class="fa-solid fa-magnifying-glass"></i></button>
             <button class="px-4 rounded-full" style="background-image: url(./assets/bg.jpg)"><i class="fa-solid fa-cart-shopping"></i></button>
-            <button class="bg-primary p-2 px-4 rounded-3xl text-2xl font-extrabold">Book Consult<i class="fa-solid fa-arrow-right  text-white -rotate-45 ml-3 bg-black rounded-full p-2"></i></button>
+            <button class="bg-primary p-2 px-4 rounded-3xl text-2xl font-extrabold text-black3">Book Consult<i class="fa-solid fa-arrow-right  text-white -rotate-45 ml-3 bg-black rounded-full p-2"></i></button>
           </div>
           <div class="visible lg:invisible absolute right-28">
             <button class="px-3" style="background-image: url(./assets/bg.jpg);"><i class="fa-solid fa-bars"></i></button>
           </div>
         </div>
       </nav>
+      <!-- banner section -->
+      <div class="bg flex flex-col items-center w-3/4 mx-auto text-center">
+        <img src="./assets/banner.png" alt="banner-img">
+        <h1 class="mt-5 text-6xl font-extrabold text-black3" >A barn house of this design has a striking appearance</h1>
+        <p class="mt-5 font-medium text-black2" >The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+        <button class="bg-secondary mt-5 p-2 px-4 rounded-3xl text-2xl font-extrabold text-black3">View Details<i class="fa-solid fa-arrow-right -rotate-45 ml-3 bg-primary rounded-full p-2"></i></button>
+      </div>
     </header>
   </body>
 </html>
